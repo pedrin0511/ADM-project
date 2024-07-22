@@ -7,6 +7,7 @@ import Container from './components/layout/Container';
 import Navbar from'./components/layout/Navbar'
 import Footer from './components/layout/Footer';
 import Projects from './components/pages/projects';
+import Project from './components/pages/project';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path='/Company' Component={Company}/>
           <Route path='/Contato' Component={Contato}/>
           <Route path='/Newproject' Component={Newproject}/>
+          <Route path='/project/:id' Component={Project}/>
         </Routes>
       </Container>
 

@@ -21,10 +21,10 @@ function Navbar(){
           ☰
         </div>
         <ul className={`${styles.list} ${isOpen ? styles.open : ''}`}>
-          <li className={styles.item}><Link to="/">Home</Link></li>
-          <li className={styles.item}><Link to="/Projects">Projects</Link></li>
-          <li className={styles.item}><Link to="/Contato">Contato</Link></li>
-          <li className={styles.item}><Link to="/Company">Empresa</Link></li>
+          <li className={styles.item} onClick={toggleMenu}><Link to="/">Home</Link></li>
+          <li className={styles.item} onClick={toggleMenu}><Link to="/Projects">Projects</Link></li>
+          <li className={styles.item} onClick={toggleMenu}><Link to="/Contato">Contato</Link></li>
+          <li className={styles.item} onClick={toggleMenu}><Link to="/Company">Empresa</Link></li>
         </ul>
             </Container>
       </nav>
